@@ -37,6 +37,8 @@ client.on("ready", () => {
 })
 
 client.on("episodeAppeared", link => {
+    console.log("Odcinek się pojawił!")
+
     const spyte = client.users.cache.get("367390191721381890")
 
     const embed = new Discord.MessageEmbed()
@@ -45,7 +47,7 @@ client.on("episodeAppeared", link => {
         .setThumbnail("https://media.comicbook.com/2020/12/attack-on-titan-season-4-poster-visual-1247732-1280x0.jpeg")
         .setDescription(`• Pojawił się nowy odcinek serii **Shingeki no Kyojin**\n• Dostępny [tutaj](${link})`)
         .setTimestamp()
-    spyte.send(embed)
+    spyte.send(embed).then(() => process.exit())
 })
 
 client.login(process.env.TOKEN)
