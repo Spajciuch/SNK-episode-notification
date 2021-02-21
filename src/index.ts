@@ -14,7 +14,7 @@ const rl = readline.createInterface({
 
 const check = function () {
     rl.question("Podaj numer odcinka do sprawdzenia: ", function (number) {
-        console.log(`Srawdzanie na pojawienie się odcinka ${number}`)
+        console.log(`Czekanie na pojawienie się odcinka ${number}`)
 
         const fetchInterval = setInterval(function () {
             fetch(`https://snk.wbijam.pl/czwarta_seria-${number}.html`)
