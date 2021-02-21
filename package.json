@@ -1,0 +1,13 @@
+{
+  "name": "AnimeNotification",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "spyte",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node-fetch": "^2.5.8",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1"
+  }
+}
